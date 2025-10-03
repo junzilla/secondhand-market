@@ -1,0 +1,250 @@
+.product-detail {
+  height: 100%;
+  overflow-y: auto;
+  background-color: white;
+  padding: 0;
+}
+
+.no-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #6c757d;
+  padding: 40px;
+}
+
+.no-selection-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-selection h3 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  color: #495057;
+}
+
+.no-selection p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 24px 16px 24px;
+  border-bottom: 1px solid #e9ecef;
+  background: #0082CB;
+  color: white;
+}
+
+.detail-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.price-tag {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffd700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.detail-image-container {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.detail-image {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.detail-content {
+  padding: 0 24px 24px 24px;
+}
+
+.detail-section {
+  margin-bottom: 32px;
+}
+
+.detail-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #495057;
+  margin: 0;
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.info-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #495057;
+  min-width: 80px;
+}
+
+.info-value {
+  color: #333;
+  font-weight: 500;
+}
+
+.info-value.condition {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.status-label-red {
+  background:red;
+  border-radius: 8px;
+  padding: 4px;
+  color:white;
+  display: inline-flex;
+  width: fit-content;
+}
+
+.status-label-green {
+  background:green;
+  border-radius: 8px;
+  padding: 4px;
+  color:white;
+  display: inline-flex;
+  width: fit-content;
+}
+
+/*
+商品状态 - 更新时间 - 框架
+*/
+.update-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  border: 1px solid #bbdefb;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #1976d2;
+  min-width: 60px;
+}
+
+/*
+商品状态 - 更新时间 - 样式
+*/
+.update-value {
+  color: #1565c0;
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.contact-button {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.4);
+}
+
+.contact-button:active {
+  transform: translateY(0);
+}
+
+.status-label-red {
+  background:red;
+  border-radius: 8px;
+  padding: 4px;
+  color:white;
+  margin-right: 21em;
+}
+
+.status-label-green {
+  background:green;
+  border-radius: 8px;
+  color: white;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .detail-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .detail-header h2 {
+    font-size: 24px;
+  }
+  
+  .price-tag {
+    font-size: 28px;
+  }
+  
+  .detail-content {
+    padding: 0 16px 16px 16px;
+  }
+  
+  .detail-image-container {
+    padding: 16px;
+  }
+  
+  .detail-image {
+    max-height: 300px;
+  }
+}

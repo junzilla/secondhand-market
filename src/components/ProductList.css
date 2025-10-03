@@ -1,0 +1,128 @@
+.product-list {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.product-list h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-item {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  
+  overflow: hidden;
+}
+
+.product-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.product-item.selected {
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
+}
+
+.product-image-container {
+  width: 187px;
+  height: 140px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.product-name {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+}
+
+.product-price {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+.product-condition {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+.product-location {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.status-label-position {
+  margin-right: 20;
+}
+
+.status-label-red {
+  background:red;
+  border-radius: 8px;
+  padding: 4px;
+  color:white;
+  display: inline-flex;
+  width: fit-content;
+}
+
+.status-label-green {
+  background:green;
+  border-radius: 8px;
+  padding: 4px;
+  color:white;
+  display: inline-flex;
+  width: fit-content;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .product-item {
+    flex-direction: column;
+  }
+  
+  .product-image-container {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .product-info {
+    padding: 12px;
+  }
+}
