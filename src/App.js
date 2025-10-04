@@ -157,6 +157,26 @@ function App() {
       status: "未卖出",
       update: "10月2日 1:21PM"
     },
+    {
+      id: 16,
+      name: "Filtrete 3M 空气净化器",
+      price: 50,
+      image: "/pics/16.jpg",
+      description: "支持 3M 的 A2/F2 型号的滤芯，我再附赠一个新的 3M 滤芯。控制面板有滤芯寿命提示，如果寿命耗尽，可以去Lowe买新的滤芯。",
+      condition: "9成新",
+      status: "未卖出",
+      update: "10月2日 1:21PM"
+    },
+    {
+      id: 17,
+      name: "戴森吸尘器",
+      price: 50,
+      image: "/pics/17.jpg",
+      description: "含长杆和短杆和闭挂式充电座。注：电池有损耗了，MAX模式下撑不了几分钟，STD模式能用15分钟。",
+      condition: "9成新",
+      status: "未卖出",
+      update: "10月2日 1:21PM"
+    },
 
 
 
