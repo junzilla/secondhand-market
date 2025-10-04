@@ -139,10 +139,10 @@ function App() {
     },
     {
       id: 14,
-      name: "EVGA 电源 450W",
+      name: "EVGA 电源 650W",
       price: 20,
       image: "/pics/14.jpg",
-      description: "全模组",
+      description: "全模组 SUPERNOVA。",
       condition: "9成新",
       status: "未卖出",
       update: "10月2日 1:21PM"
@@ -162,7 +162,7 @@ function App() {
       name: "Filtrete 3M 空气净化器",
       price: 50,
       image: "/pics/16.jpg",
-      description: "支持 3M 的 A2/F2 型号的滤芯，我再附赠一个新的 3M 滤芯。控制面板有滤芯寿命提示，如果寿命耗尽，可以去Lowe买新的滤芯。",
+      description: "支持 3M 的 A2/F2 型号的滤芯，我再附赠一个新的 3M 滤芯。控制面板有滤芯寿命提示，如果寿命耗尽，可以去Lowe买新的滤芯。带原厂包装箱。",
       condition: "9成新",
       status: "未卖出",
       update: "10月2日 1:21PM"
@@ -186,7 +186,7 @@ function App() {
     {
       id: 98,
       name: "其他小件物品",
-      price: 6324,
+      price: 0,
       image: "/pics/default.jpg",
       description: "笔筒；",
       condition: "全新",
@@ -196,7 +196,7 @@ function App() {
     {
       id: 99,
       name: "注意事项",
-      price: 6324,
+      price: 0,
       image: "/pics/default.jpg",
       description: "所有的二手物品我会尽量擦拭干净，然后再给你。微信绿泡泡：JJ24KVVS。",
       condition: "全新",
